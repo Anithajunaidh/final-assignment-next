@@ -26,8 +26,8 @@ function CustomButtonNew({ buttonType, ...props }: CustomButtonProps) {
           backgroundColor: '#00AA7F',
         },
       }),
-      ...(buttonType === 'SECONDARY' && { variant: 'outlined',color: '#00AA7F'}),
-      ...(buttonType === 'TERTIARY' && { variant: 'text', color: 'primary' }),
+      ...(buttonType === 'SECONDARY' && { variant: 'outlined',color: '#00AA7F',borderColor:'#00AA7F'}),
+      ...(buttonType === 'TERTIARY' && { variant: 'text', color: '#00AA7F' }),
       ...props.sx,
     },
   };

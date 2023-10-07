@@ -23,7 +23,10 @@ export const theme = {
       neutralBg: 'var(--neutralBg)',
       onPrimaryBg: 'var(--onPrimaryBg)',
       primaryBg: 'var(--primaryBg)',
-      primary: 'var(--primary)'  
+      primary: 'var(--primary)',  
+      lightgreen:'#00AA7F',
+      darkgreen:'#06513B',
+      grayblack:'#595656',
 
     },
       flexCenter: {
@@ -31,9 +34,9 @@ export const theme = {
         justifyContent: 'space-between',
         alignItems: 'center',
       },
-      backgroundImage: {
-        hero_img: "url('assets/images/landing-page/wave.png')",
-      },
+      // backgroundImage: {
+      //   hero_img: "url('assets/images/landing-page/wave.png')",
+      // },
       fontFamily: {
         poppins: ['Poppins', 'sans'],
       },
