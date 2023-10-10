@@ -9,7 +9,7 @@ const LadyOftheRoad = () => {
         <div className='font-poppins font-bold text-lg'>OUR LADY OF THE ROAD </div>
         <div className='mb-3 font-poppins font-bold text-lg'>FOUNDATION</div>
 <div className=' font-poppins font-bold text-xs text-justify'>The Nuestra Señora del Camino Foundation is a non-profit entity whose objective is “…to improve the quality of life of people with intellectual disabilities and that of their families, through the support of a team of professionals animated by the spirit of Christian humanism. , with respect to the beliefs and the freedom of the people. </div>
-        <CustomButtonNew type="submit" buttonType="PRIMARY" className='w-20'>
+        <CustomButtonNew type="submit" buttonType="PRIMARY" className='w-32'>
             Enroll
         </CustomButtonNew>
       </div>
@@ -42,8 +42,8 @@ const LadyOftheRoad = () => {
 </div>
       </div>
       <div className="lg:hidden">
-      <div className="grid grid-cols-6 grid-rows-2 gap-1">
-        <div className="col-span-3 ">
+      <div className="grid grid-cols-4 grid-rows-2 gap-1">
+        <div className="col-span-2 ">
           <Image
          src="/assets/images/landing-page/lady_lady_wheelchair.png"
          alt="Logo"
@@ -51,7 +51,7 @@ const LadyOftheRoad = () => {
          height={250}
        />
         </div>
-    <div className="col-span-3 col-start-4">
+    <div className="col-span-2 col-start-3">
     <Image
          src="/assets/images/landing-page/ladies_donating.png"
          alt="Logo"
@@ -59,7 +59,7 @@ const LadyOftheRoad = () => {
          height={250}
        />  
     </div>
-    <div className="col-span-3 col-start-3 row-start-2">
+    <div className="col-span-2 col-start-2 row-start-2">
     <Image
          src="/assets/images/landing-page/oldman_caretaker.png"
          alt="Logo"

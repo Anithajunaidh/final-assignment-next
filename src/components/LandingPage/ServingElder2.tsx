@@ -5,7 +5,7 @@ import Image from 'next/image'
 const ServingElder2 = () => {
   return (
     <div className='px-4 py-6 flex flex-col font-poppins lg:flex-row-reverse'>
-      <div className='w-1/2 p-4 bg-cover'style={{
+      <div className='p-4 bg-cover lg:w-1/2'style={{
       backgroundImage: `url(${images.holdingHands})`,
     }}>
 
@@ -16,7 +16,8 @@ const ServingElder2 = () => {
          alt="Logo"
          width={200}
          height={150}
-         style={{objectFit: "contain"}}
+        // style={{objectFit: "contain"}}
+        layout='responsive'
        />  
  
     </div>
@@ -26,14 +27,15 @@ const ServingElder2 = () => {
          alt="Logo"
          width={200}
          height={150}
-         style={{objectFit: "contain"}}
+         //style={{objectFit: "contain"}}
+         layout='responsive'
        />  
 
     </div>
 </div>
     
 </div>
-      <div className='bg-lightgreen p-6 text-white w-1/2'>
+      <div className=' p-6 lg:w-1/2 text-white bg-lightgreen '>
       <div className=' font-bold text-xl text-center'>
       Serving the Elder Cause 
       </div>

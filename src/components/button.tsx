@@ -12,6 +12,7 @@ function CustomButtonNew({ buttonType, ...props }: CustomButtonProps) {
     marginTop: 10,
     borderRadius: 5,
     width:'100%', 
+    textTransform: 'none',
   };
 
   const buttonProps: ButtonProps = {
@@ -29,6 +30,7 @@ function CustomButtonNew({ buttonType, ...props }: CustomButtonProps) {
       ...(buttonType === 'SECONDARY' && { variant: 'outlined',color: '#00AA7F',borderColor:'#00AA7F'}),
       ...(buttonType === 'TERTIARY' && { variant: 'text', color: '#00AA7F' }),
       ...props.sx,
+      textTransform: 'none',
     },
   };
 
