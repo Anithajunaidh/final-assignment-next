@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Button, { ButtonProps } from '@mui/material/Button';
 type BUTTON_TYPES = 'PRIMARY' | 'SECONDARY' | 'TERTIARY';
 
 interface CustomButtonProps extends ButtonProps {
   buttonType: BUTTON_TYPES;
+  startIcon?: ReactNode; // Define a prop for start icon
+  endIcon?: ReactNode; // Define a prop for end icon
 }
 
-function CustomButtonNew({ buttonType, ...props }: CustomButtonProps) {
+function CustomButtonNew({ buttonType,startIcon, endIcon, ...props }: CustomButtonProps) {
   const buttonStyles = {
     marginBottom: 10,
     marginTop: 10,
@@ -34,7 +36,11 @@ function CustomButtonNew({ buttonType, ...props }: CustomButtonProps) {
     },
   };
 
-  return <Button {...buttonProps}>{props.children}</Button>;
+  return <Button {...buttonProps}>
+    {startIcon && startIcon}
+    {props.children}
+    {endIcon && endIcon}
+    </Button>;
 }
 
 export default CustomButtonNew;

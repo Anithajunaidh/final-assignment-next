@@ -8,6 +8,8 @@ import ServingElder from '@/components/LandingPage/ServingElder'
 import NursingHome from '@/components/LandingPage/NursingHome'
 import ServingElder2 from '@/components/LandingPage/ServingElder2'
 import React from 'react'
+import LogoutButton from '@/app/components/LogoutButton'
+// import RetirementLife from '@/components/LandingPage/RetirementLife'
 
 const LandingPage = () => {
   return (
@@ -19,7 +21,9 @@ const LandingPage = () => {
 <ServingElder/>
 <Doctors/>
 <ServingElder2/>
-<NursingHome/>  
+<NursingHome/> 
+{/* <RetirementLife/>  */}
+<LogoutButton/>
     </div>
   )
 }

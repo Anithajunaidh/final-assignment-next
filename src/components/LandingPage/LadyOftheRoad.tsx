@@ -45,11 +45,11 @@ const LadyOftheRoad = () => {
       <div className="grid grid-cols-4 grid-rows-2 gap-1">
         <div className="col-span-2 ">
           <Image
-         src="/assets/images/landing-page/lady_lady_wheelchair.png"
+         src="/assets/images/landing-page/womenInWheelchair.svg"
          alt="Logo"
          width={300}
          height={250}
-       />
+         className='w-full'       />
         </div>
     <div className="col-span-2 col-start-3">
     <Image
@@ -57,6 +57,7 @@ const LadyOftheRoad = () => {
          alt="Logo"
          width={300}
          height={250}
+         className='w-full'
        />  
     </div>
     <div className="col-span-2 col-start-2 row-start-2">
@@ -65,6 +66,7 @@ const LadyOftheRoad = () => {
          alt="Logo"
          width={300}
          height={250}
+         className='w-full'
        />  
     </div>
 </div>
