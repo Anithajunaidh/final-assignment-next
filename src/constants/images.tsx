@@ -29,6 +29,7 @@ const images = {
   staffs1:'/assets/images/landing-page/staffs1.png',
   staffs2:'/assets/images/landing-page/staffs2.png',
   ladyDoctorRaindrop:'/assets/images/landing-page/lady_doctor_raindrop.png',
+  manLogin:'/assets/images/landing-page/man_login.svg',
   // Add more image constants as needed
 };
 
