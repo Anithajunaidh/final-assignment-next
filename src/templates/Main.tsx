@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 import { AppConfig } from '@/utils/AppConfig';
+import dashboards from '@/pages/user-dashboard';
 
 type IMainProps = {
   meta?: ReactNode;
@@ -94,6 +95,9 @@ const Main = (props: IMainProps) => (
                   Sign up
                 </Link>
               </li>
+              <Link href="/user-dashboard/">
+                dash
+              </Link>
             </ul>
           </nav>
         </div>

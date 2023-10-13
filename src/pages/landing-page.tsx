@@ -11,6 +11,7 @@ import React from 'react'
 const LandingPage = () => {
   return (
     <div className='mx-auto max-w-screen-xl'>
+      
 <Hero/>
 <LadyOftheRoad/>
 <OccupationalCenter/>

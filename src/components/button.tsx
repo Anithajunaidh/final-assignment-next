@@ -18,15 +18,12 @@ function CustomButtonNew({ buttonType, ...props }: CustomButtonProps) {
     ...props,
     sx: {
       ...buttonStyles,
-      ...(buttonType === 'PRIMARY' && {
-        variant: 'contained',
-        backgroundColor:'#00AA7F',
-        color:'white',  
+      ...(buttonType === 'PRIMARY' && { variant: 'contained', backgroundColor:'#00AA7F',color:'white',  
         '&:hover': { 
           backgroundColor: '#00AA7F',
         },
       }),
-      ...(buttonType === 'SECONDARY' && { variant: 'outlined',color: '#00AA7F',borderColor:'#00AA7F'}),
+      ...(buttonType === 'SECONDARY' && { variant:"outlined",color: '#00AA7F',borderColor:'#00AA7F'}),
       ...(buttonType === 'TERTIARY' && { variant: 'text', color: '#00AA7F' }),
       ...props.sx,
     },

@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import IconLabelButtons from '../IconButton'
+import Link from 'next/link';
+
 
 const NavBar = () => {
   return (
@@ -13,9 +15,15 @@ const NavBar = () => {
          height={100}
        />
        </div>
-       <div className='pt-4'>
+       {/* <div className='pt-4'>
        <IconLabelButtons/>
-      </div>  
+      </div>   */}
+      <div className='pt-4'>
+       <Link href="/LoginPage">
+         <IconLabelButtons />
+       </Link>
+      </div>
+
       </div> 
   )
 }

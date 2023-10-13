@@ -24,9 +24,14 @@ export const theme = {
       onPrimaryBg: 'var(--onPrimaryBg)',
       primaryBg: 'var(--primaryBg)',
       primary: 'var(--primary)',  
-      lightgreen:'#00AA7F',
+      //lightgreen:'#00AA7F',
       darkgreen:'#06513B',
       grayblack:'#595656',
+      primarygreen:'#144436',
+      secondarygreen:'#00AA7F',
+      lightgreen:'#2d564d',
+      white:'#FFFFFF',
+     
 
     },
       flexCenter: {

@@ -1,5 +1,6 @@
 const images = {
   logo: '/assets/images/landing-page/logo.svg',
+  logoutIcon:'/assets/images/landing-page/logoutIcon.svg',
   heroBackground:'/assets/images/landing-page/wave.png',
   heroImage:'/assets/images/landing-page/hero_image.png',
   commitmentIcon:'/assets/images/landing-page/commitment_icon.svg',
