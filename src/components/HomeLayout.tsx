@@ -7,15 +7,17 @@ import Image from 'next/image';
 import LogoutButton from '@/app/components/LogoutButton';
 
 
- 
+type HomeLayoutProps = {
+  children: React.ReactNode; //👈 children prop typr
+};
 
-const HomeLayout = () => {
+const HomeLayout = (props:HomeLayoutProps) => {
 
   return (
 
     <div className='reset h-screen bg-darkgreen'>
 
-      <div className='flex justify-between p-3  w-full h-1/5 bg-primarygreen'>
+      <div className='flex justify-between p-3  w-full h-1/5 bg-darkgreen'>
 
         <div>
 
@@ -35,7 +37,7 @@ const HomeLayout = () => {
 
         </div>  
 
-        <div className='w-14 h-14 pt-4 pl-4 text-white rounded-full relative top-10 right-10 bg-secondarygreen'>
+        <div className='w-14 h-14 pt-4 pl-4 text-white rounded-full relative top-10 right-10 bg-lightgreen'>
 
            AD
 
@@ -62,15 +64,13 @@ const HomeLayout = () => {
         </div>
 
         <div className='w-3/4  bg-white rounded-tl-2xl'>
-
-         
-
+        {props.children}
         </div>
 
       </div>
 
      
-
+     
      
 
     </div>

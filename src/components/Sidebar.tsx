@@ -1,10 +1,19 @@
-import LogoutButton from '@/app/components/LogoutButton'
 import React from 'react'
-
-const Sidebar = () => {
+import Image from 'next/image'
+import images from '@/constants/images';
+type SidebarProps = {
+  children: React.ReactNode; //👈 children prop typr
+};
+const Sidebar = (props:SidebarProps) => {
   return (
-    <div className='h-full w-full bg-lightgreen'>
-   <LogoutButton/>   
+    <div className='shadow-md border-2 border-solid border-darkgreen flex flex-col items-center h-1/2 w-1/2 m-52'>
+      <div className='bg-lightgreen rounded-tl-lg rounded-tr-lg  flex items-center justify-between w-full'>
+      <div className='text-white text-xl font-bold pl-4'>Bienvenido de nuevo</div>
+      <Image src={images.manLogin} alt='man login' height={150} width={200} className='pr-4'/>
+      </div>
+      <div className='bg-white w-full h-72 '>
+      {props.children}
+      </div>
     </div>
   )
 }

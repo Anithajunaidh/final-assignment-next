@@ -1,13 +1,16 @@
 import Sidebar from '@/components/Sidebar';
-import { ReactNode } from 'react';
-
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function ProductDetailLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body>
-      <Sidebar/>
+    <div>
+      <Sidebar>
+      <main >
       {children}
-      </body>
-    </html>
+      </main>
+      </Sidebar>
+    </div>
   );
 }
