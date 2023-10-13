@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import images from '@/constants/images';
-type SidebarProps = {
+type LoginLayoutProps = {
   children: React.ReactNode; //👈 children prop typr
 };
-const Sidebar = (props:SidebarProps) => {
+const LoginLayout = (props:LoginLayoutProps) => {
   return (
-    <div className='shadow-md border-2 border-solid border-darkgreen flex flex-col items-center h-1/2 w-1/2 m-52'>
+    <div className='shadow-md  flex flex-col items-center h-1/2 w-1/2 m-52'>
       <div className='bg-lightgreen rounded-tl-lg rounded-tr-lg  flex items-center justify-between w-full'>
       <div className='text-white text-xl font-bold pl-4'>Bienvenido de nuevo</div>
       <Image src={images.manLogin} alt='man login' height={150} width={200} className='pr-4'/>
@@ -18,4 +18,4 @@ const Sidebar = (props:SidebarProps) => {
   )
 }
 
-export default Sidebar
+export default LoginLayout

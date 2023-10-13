@@ -1,4 +1,4 @@
-import Sidebar from '@/components/Sidebar';
+import LoginLayout from '@/components/LoginLayout';
 export default function ProductDetailLayout({
   children,
 }: {
@@ -6,11 +6,11 @@ export default function ProductDetailLayout({
 }) {
   return (
     <div>
-      <Sidebar>
+      <LoginLayout>
       <main >
       {children}
       </main>
-      </Sidebar>
+      </LoginLayout>
     </div>
   );
 }

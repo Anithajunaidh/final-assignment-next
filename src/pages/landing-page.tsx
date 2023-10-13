@@ -9,7 +9,7 @@ import NursingHome from '@/components/LandingPage/NursingHome'
 import ServingElder2 from '@/components/LandingPage/ServingElder2'
 import React from 'react'
 import LogoutButton from '@/app/components/LogoutButton'
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '@/components/LoginLayout'
 // import RetirementLife from '@/components/LandingPage/RetirementLife'
 
 const LandingPage = () => {
