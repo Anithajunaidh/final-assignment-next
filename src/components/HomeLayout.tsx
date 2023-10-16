@@ -1,6 +1,7 @@
-
+'use client'
 import React from 'react'
-
+import { useSelector} from 'react-redux';
+import { selectUserType } from '@/redux/features/users/userSlice';
 import '@/styles/global.css';
 
 import Image from 'next/image';
@@ -12,7 +13,7 @@ type HomeLayoutProps = {
 };
 
 const HomeLayout = (props:HomeLayoutProps) => {
-
+  const userType = useSelector(selectUserType);
   return (
 
     <div className='reset h-screen bg-darkgreen'>
@@ -43,15 +44,72 @@ const HomeLayout = (props:HomeLayoutProps) => {
 
         </div>
 
+      {/* Display the user type in the sidebar */}
+      <div>User Type: {userType}</div>
+
       </div>
 
       <div className='flex  h-4/5'>
 
         <div className='w-1/4 p-4 flex flex-col justify-between'>
+  {/* sidebar content */}
+        {userType === 'superadmin' && (
+        <>
+          {/* Super Admin Sidebar Content */}
+          <div>
+            <h3>Super Admin Menu</h3>
+            <ul>
+              <li>
+                <a href="/admin-management">Admin Management</a>
+              </li>
+              <li>
+                <a href="/user-management">User Management</a>
+              </li>
+              <li>
+                <a href="/validate-expenses">Validate Expenses</a>
+              </li>
+            </ul>
+          </div>
+        </>
+      )}
 
+      {userType === 'admin' && (
+        <>
+          {/* Admin Sidebar Content */}
+          <div>
+            <h3>Admin Menu</h3>
+            <ul>
+              <li>
+                <a href="/user-management">User Management</a>
+              </li>
+              <li>
+                <a href="/validate-expenses">Validate Expenses</a>
+              </li>
+            </ul>
+          </div>
+        </>
+      )}
+
+      {userType === 'user' && (
+        <>
+          {/* User Sidebar Content */}
+          <div>
+            <h3>User Menu</h3>
+            <ul>
+              <li>
+                <a href="/bills">Bills</a>
+              </li>
+              <li>
+                <a href="/remittances">Remittances</a>
+              </li>
+            </ul>
+          </div>
+        </>
+      )}
           <div className=' bg-primarygreen text-white'>
 
-            User Login
+         {/* Display the user type in the sidebar */}
+          <div>User Type: {userType}</div>
 
           </div>
 

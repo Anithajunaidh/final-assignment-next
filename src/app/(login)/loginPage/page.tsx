@@ -1,7 +1,9 @@
 'use client'
 import React from 'react';
-// import { useDispatch } from 'react-redux';
-// import { login } from './user/userSlice';
+
+import { useDispatch } from 'react-redux';
+import { setUserType } from '@/redux/features/users/userSlice';
+
 import { Field, Form,  Formik } from 'formik';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -11,15 +13,16 @@ import CustomButtonNew from '@/components/button';
 
 
 const loginPage: React.FC = () => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const router=useRouter();
   const initialValues = {
     email: '', 
     password: '',
   };
-
   const onSubmit = async (values: { email: string; password: string }) => {
-    router.push('')
+    const userType = 'user';
+    dispatch(setUserType(userType));
+    router.push('/resetpassword')
   }
   return (
     <div className="flex flex-col items-center justify-center text-onNeutralBg">

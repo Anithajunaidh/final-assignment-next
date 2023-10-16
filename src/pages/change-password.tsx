@@ -9,7 +9,7 @@ const router=useRouter();
 const initialValues={currentPassword:'',newPassword:'',confirmPassword:''}
   const onSubmit = (values:{currentPassword:string,newPassword:string ,confirmPassword:string}) => {
     console.log('Form Values:', values);
-router.push('/login')
+router.push('/loginpage')
   };
 
   return (
