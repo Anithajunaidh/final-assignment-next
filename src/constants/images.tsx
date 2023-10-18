@@ -30,7 +30,17 @@ const images = {
   ladyDoctorRaindrop:'/assets/images/landing-page/lady_doctor_raindrop.png',
   womenInWheelchair:'/assets/images/landing-page/womenInWheelchair.svg',
   logoutIcon:'/assets/images/logout_icon.svg',
-  manLogin:'/assets/images/landing-page/man_login.svg'
+  manLogin:'/assets/images/landing-page/man_login.svg',
+  seniorsEatingDinner:'/assets/images/landing-page/Sr_men_women_eating_dinner.svg',
+  seniorsWatchingTV:'/assets/images/landing-page/senior_people_watching_tv.svg',
+  seniorsPlayingChess:'/assets/images/landing-page/senior_people_playing_chess.svg',
+  DrCheckingSrWomen:'/assets/images/landing-page/DrCheckingSrWomen.svg',
+  maleHealthVisitor:'/assets/images/landing-page/male_health_visitor.svg',
+  gatheringSrPeople:'/assets/images/landing-page/gathering_senior_people.svg',
+  femaleHealthVisitor:'/assets/images/landing-page/female-nurse-taking-care-elderly-person.svg',
+  nurseFeedingSrMan:'/assets/images/landing-page/nurse_feeding_Sr_man.svg',
+  drGivingPills:'/assets/images/landing-page/doctor_giving_pills.svg',
+  oldmanReadingBook:'/assets/images/landing-page/oldman_reading_book.svg'
   // Add more image constants as needed
 };
 

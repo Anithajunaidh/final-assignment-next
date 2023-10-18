@@ -19,6 +19,8 @@ const loginPage: React.FC = () => {
     email: '', 
     password: '',
   };
+  const graphqlEndpoint = 'http://localhost:3000/graphql'; 
+
   const onSubmit = async (values: { email: string; password: string }) => {
     const userType = 'user';
     dispatch(setUserType(userType));

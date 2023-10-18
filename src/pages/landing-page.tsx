@@ -10,6 +10,9 @@ import ServingElder2 from '@/components/LandingPage/ServingElder2'
 import React from 'react'
 import LogoutButton from '@/app/components/LogoutButton'
 import Sidebar from '@/components/LoginLayout'
+import RetirementLife from '@/components/LandingPage/RetirementLife'
+import { Campaign } from '@mui/icons-material'
+import Campaigns from '@/components/LandingPage/Campaigns'
 // import RetirementLife from '@/components/LandingPage/RetirementLife'
 
 const LandingPage = () => {
@@ -23,9 +26,8 @@ const LandingPage = () => {
 <Doctors/>
 <ServingElder2/>
 <NursingHome/> 
-{/* <RetirementLife/>  */}
-<LogoutButton/>
-<Sidebar>Hello</Sidebar>
+<RetirementLife/>
+<Campaigns/>
     </div>
   )
 }
