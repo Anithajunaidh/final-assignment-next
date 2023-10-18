@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
 import { useSelector} from 'react-redux';
-import { selectUserType } from '@/redux/features/users/userSlice';
+import { selectUserType } from '@/store/userSlice';
 import '@/styles/global.css';
 import Image from 'next/image';
 import LogoutButton from '@/app/components/LogoutButton';
+import { PlatformUserType, UserType,} from '@/constants/UserType';
 
 type HomeLayoutProps = {
   children: React.ReactNode; //👈 children prop typr
@@ -30,7 +31,7 @@ const HomeLayout = (props:HomeLayoutProps) => {
       <div className='flex  h-4/5'>
         <div className='w-1/4 p-4 flex flex-col justify-between'>
   {/* sidebar content */}
-        {userType === 'superadmin' && (
+        {userType === PlatformUserType.SUPER_ADMIN && (
         <>
           {/* Super Admin Sidebar Content */}
           <div>
@@ -67,7 +68,7 @@ const HomeLayout = (props:HomeLayoutProps) => {
         </>
       )}
 
-      {userType === 'user' && (
+      {userType === UserType.CENTER_USER && (
         <>
           {/* User Sidebar Content */}
           <div>

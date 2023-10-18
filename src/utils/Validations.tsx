@@ -2,12 +2,13 @@ import * as Yup from 'yup';
 
 export const LoginvalidationSchema = Yup.object({
   email: Yup.string().required('Username is required'),
-  password: Yup.string().min(8, 'Password must be at least 8 characters')
-  .matches(
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
-    'Password must contain at least one lowercase letter, one uppercase letter, one number, and one special character'
-  )
-  .required('Password is required')
+  // password: Yup.string().min(8, 'Password must be at least 8 characters')
+  // .matches(
+  //   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
+  //   'Password must contain at least one lowercase letter, one uppercase letter, one number, and one special character'
+  // )
+  // .required('Password is required')
+  
 //  .required('Password is required')
 //     .test('is-strong-password', 'Password must be strong', (value) => {
 //       // Example: At least 8 characters, 1 uppercase letter, 1 lowercase letter, and 1 special character

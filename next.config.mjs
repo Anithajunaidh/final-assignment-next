@@ -11,6 +11,9 @@ export default bundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
+  env: {
+    graphqlEndpoint: process.env.BACKEND_URL,
+  },
   poweredByHeader: false,
   basePath: '',
   // The starter code load resources from `public` folder with `router.basePath` in React components.
