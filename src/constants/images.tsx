@@ -1,7 +1,7 @@
 const images = {
   logo: '/assets/images/landing-page/logo.svg',
   heroBackground:'/assets/images/landing-page/wave.png',
-  heroImage:'/assets/images/landing-page/hero_image.png',
+  heroImage:'/assets/images/landing-page/hero_image.svg',
   commitmentIcon:'/assets/images/landing-page/commitment_icon.svg',
   excellenceIcon:'/assets/images/landing-page/excellence_icon.svg',
   integrityIcon:'/assets/images/landing-page/integrity_icon.svg',

@@ -79,7 +79,7 @@ const Main = (props: IMainProps) => (
             <ul className="flex flex-wrap text-xl">
               <li className="mr-6">
                 <Link
-                  href="/login/"
+                  href="/loginpage/"
                   className="border-none text-gray-700 hover:text-gray-900"
                 >
                   Log in

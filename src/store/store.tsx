@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import userReducer from '@/store/userSlice';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; 
+import  {usersApi}  from "./ApiSlice";
 
 // Create a configuration for persisting the user slice
 const userPersistConfig = {
@@ -18,7 +19,10 @@ const store = configureStore({
     reducer: {
         // user: userReducer
         user: persistedUserReducer,
-    }
+        [usersApi.reducerPath]: usersApi.reducer, 
+    },
+    middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(usersApi.middleware), 
 })
 const persistor = persistStore(store);
 export type RootState = ReturnType<typeof store.getState>;

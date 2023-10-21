@@ -34,9 +34,10 @@ export const theme = {
         justifyContent: 'space-between',
         alignItems: 'center',
       },
-      // backgroundImage: {
-      //   hero_img: "url('assets/images/landing-page/wave.png')",
-      // },
+      backgroundImage: {
+        hero_img_large: "url('../images/bg_wave.svg')",
+        hero_img: "url('../images/bg_mobile.svg')",
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans'],
       },

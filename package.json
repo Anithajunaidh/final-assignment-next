@@ -29,7 +29,8 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.4",
+    "@apollo/client": "^3.8.0-rc.2",
+    "@apollo/experimental-nextjs-app-support": "^0.4.3",
     "@clerk/nextjs": "^4.23.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
