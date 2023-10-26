@@ -15,42 +15,58 @@ Serving the Elder Cause for four decades</div>
   </div>
   <div className='hidden md:block'>
 <div className="pt-6 grid grid-cols-10 grid-rows-2 gap-4">
-        <div className="col-span-3 row-span-5">
-        <Image src={images.prayingMan} alt="praying-man" width={350} height={500}/>
+        <div className="col-span-3 row-span-2">
+        <Image 
+        src={images.prayingMan} 
+        alt="praying-man" 
+        width={350} 
+        height={500} 
+        layout='responsive'
+        />
         </div>
-    <div className=" row start-1 col-start-4">
+    <div className=" row start-1 col-start-4 col-span-2 relative rounded-xl overflow-hidden">
     <Image
          src={images.patientWithDoctor}
          alt="patient-with-doctor"
-         width={200}
-         height={275}
+        //  width={200}
+        //  height={275}
+         layout='fill'
+         objectFit='cover'
        /> 
     </div>
-    <div className=" row-start-1 col-start-6">
+    <div className=" row-start-1 col-start-6 col-span-2 relative rounded-xl overflow-hidden">
     <Image
          src={images.doctorCaringWoman}
          alt="doctor-caring-woman"
-         width={200}
-         height={275}
+        layout='fill'
+        objectFit='cover'
        /> 
     </div>
-    <div className="col-span-3 row-span-5 col-start-8">
-      <Image src={images.oldageHome} alt="oldage home" width={350} height={500}/>
+    <div className="col-span-3 row-span-2 col-start-8 relative rounded-xl overflow-hidden">
+      <Image 
+      src={images.oldageHome} 
+      alt="oldage home" 
+      layout='fill'
+      objectFit='cover'
+      className='pb-1'
+      />
     </div>
-    <div className="col-start-4 row-start-2">
+    <div className="col-start-4 row-start-2 col-span-2 relative rounded-xl overflow-hidden">
     <Image
          src={images.seniorWomanSittingBedroom}
          alt="seniorWomanSittingBedroom"
-         width={200}
-         height={200}
+        layout='fill'
+        objectFit='cover'
+        className='pb-1'
        /> 
     </div>
-    <div className="row-start-2 col-start-6"> 
+    <div className="row-start-2 col-start-6 col-span-2 relative rounded-xl overflow-hidden"> 
     <Image
          src={images.joyfulOldLady}
          alt="joyful-lady" 
-         width={200}
-         height={200} 
+        layout='fill'
+        objectFit='cover'
+        className='pb-1'
        />
        </div>
 </div>

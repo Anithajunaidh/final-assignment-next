@@ -1,21 +1,12 @@
-import { createApi, fetchBaseQuery,} from '@reduxjs/toolkit/query/react';
+import { createApi,} from '@reduxjs/toolkit/query/react';
 //import { useDispatch } from 'react-redux';
-import { LOGIN_MUTATION, } from '@/graphql/LoginMutation';
+import { LOGIN_MUTATION, } from '@/Api/LoginMutation';
+import baseQueryWithReauth from './ReAuth';
+import { REGENERATE_TOKEN } from '@/Api/RegenerateToken';
 
-export interface LoginResponse {
-  data: {
-    login: {
-      access_token: string;
-      user_type: string;
-      user_id:number,
-      platform_user_type:string,
-      logged_in_through:string
-    };
-  };
-}
 export const usersApi=createApi({
 reducerPath:'usersApi',
-  baseQuery:fetchBaseQuery({baseUrl:"https://ngobackv.caprover2.innogenio.com/graphql"}),
+  baseQuery:baseQueryWithReauth,
   endpoints:(builder)=>({
     login:builder.mutation({
 query:({email,password})=>{
@@ -31,13 +22,21 @@ query:({email,password})=>{
       }
     }
    },
-  //  onQueryStarted: async () => {
-  //   dispatch(setLoading(true));
-  // },
-  // onQueryFailed: async (error) => {
-  //   dispatch(setError(error.message));
-  // },
+  }), 
+  regenerateAccessToken:builder.mutation({
+    query:({token})=>{
+      return{
+        url:'',
+        method:'POST',
+        body:{
+          query:REGENERATE_TOKEN.query,
+          variables:{
+            token
+          },
+        }
+      }
+    }
   }),
  }),
 });
-export const{useLoginMutation}=usersApi
+export const{useLoginMutation,useRegenerateAccessTokenMutation}=usersApi;

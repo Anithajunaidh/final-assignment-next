@@ -20,7 +20,6 @@
 
 // export default About;
 
-import EmpowerWomen from '@/components/LandingPage/EmpowerWomen';
 import type { NextPage } from 'next';
 import { useEffect, useState } from 'react';
 
@@ -91,7 +90,6 @@ const Home: NextPage = () => {
           </label>
         </div>
       </div>
-      <EmpowerWomen/>
     </div>
   );
 };

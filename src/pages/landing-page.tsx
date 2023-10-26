@@ -1,4 +1,4 @@
-import Doctors from '@/components/Doctors'
+import Doctors from '@/components/LandingPage/Doctors'
 import EmpowerWomen from '@/components/LandingPage/EmpowerWomen'
 import Hero from '@/components/LandingPage/Hero'
 import LadyOftheRoad from '@/components/LandingPage/LadyOftheRoad'
@@ -9,6 +9,7 @@ import ServingElder2 from '@/components/LandingPage/ServingElder2'
 import React from 'react'
 import RetirementLife from '@/components/LandingPage/RetirementLife'
 import Campaigns from '@/components/LandingPage/Campaigns'
+import DayCenter from '@/components/LandingPage/DayCenter'
 // import RetirementLife from '@/components/LandingPage/RetirementLife'
 
 const LandingPage = () => {
@@ -19,6 +20,7 @@ const LandingPage = () => {
 <OccupationalCenter/>
 <EmpowerWomen/>
 <ServingElder/>
+<DayCenter/>
 <Doctors/>
 <ServingElder2/>
 <NursingHome/> 

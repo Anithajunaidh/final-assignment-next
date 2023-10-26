@@ -18,6 +18,7 @@ const Hero = () => {
          alt="Hero_image"
          width={500}
          height={400}
+         layout='responsive'
        />  
       </div>
       <div className='text-lightgreen font-poppins font-bold lg:ml-10 lg:w-1/3 lg:text-white lg:pt-6'>

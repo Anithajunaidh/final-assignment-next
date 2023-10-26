@@ -17,11 +17,11 @@ const NursingHome = () => {
     </CustomButtonNew>
     </div>
     <div className=' p-4 text-center lg:w-1/2'> 
-    <Image src={images.ladyDoctorRaindrop} alt="lady-doctor-with-patient" width={350} height={500}/>
+    <Image src={images.ladyDoctorRaindrop} alt="lady-doctor-with-patient" width={350} height={500} layout='responsive'/>
   </div> 
   </div>
-  <div className='bg-lightgreen rounded-tr-3xl flex flex-col text-white lg:flex-row font-poppins mr-20 p-10'>
-    <div className='w-2/3'>
+  <div className='bg-lightgreen rounded-tr-large flex flex-col justify-center items-center text-white lg:flex-row font-poppins p-10 lg:mr-20'>
+    <div className='lg:w-2/3'>
 <div className='font-bold text-xl mb-5'>
 Nuestra Señora del Camino Residence for the Elderly
 </div>
@@ -29,7 +29,7 @@ Nuestra Señora del Camino Residence for the Elderly
 The Nuestra Señora del Camino Residence for the Elderly has a capacity for 72 people. It is located in Mirasierra, north of Madrid. In the same premises but being independent structures, there is the Nuestra Señora del Camino Residence and the Nuestra Señora del Camino I Occupational Center , which serve the group of people with intellectual disabilities.
 </div>
 </div>
- <div className='lg:ml-auto lg:w-1/3 pl-10'>
+ <div className='text-center lg:ml-auto lg:w-1/3 lg:pl-10'>
 <CustomButtonNew type="submit" buttonType="PRIMARY" className=' font-poppins font-bold text-xs text-lightgreen w-32 bg-white'>
             Read About Us
 </CustomButtonNew>

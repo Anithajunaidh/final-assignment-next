@@ -17,6 +17,10 @@ export const theme = {
     '6xl': '4rem',
   },
   extend: {
+    screens: {
+      'md': '640px',
+      'lg': '768px',
+    },
     colors: {
   
       onNeutralBg: 'var(--onNeutralBg)',
@@ -37,9 +41,13 @@ export const theme = {
       backgroundImage: {
         hero_img_large: "url('../images/bg_wave.svg')",
         hero_img: "url('../images/bg_mobile.svg')",
+        DrCheckingSrWoman:"url('../images/DrCheckingSrWoman.svg')"
       },
       fontFamily: {
         poppins: ['Poppins', 'sans'],
+      },
+      borderRadius: {
+        'large': '60px',
       },
     }
 };

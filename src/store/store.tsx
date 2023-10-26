@@ -8,7 +8,7 @@ import  {usersApi}  from "./ApiSlice";
 const userPersistConfig = {
   key: 'user', // Key under which the user data will be stored in storage
   storage, // The storage medium you want to use (e.g., local storage)
-  whitelist: ['tokens', 'role'], // Only persist these properties
+  // whitelist: ['tokens', 'role'], // Only persist these properties
  // blacklist: ['role'], 
 };
 

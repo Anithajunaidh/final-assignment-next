@@ -1,5 +1,5 @@
 
-import { ApolloWrapper } from "@/graphql/ApolloProvider";
+import { ApolloWrapper } from "@/Api/ApolloProvider";
 import ReduxProvider from "@/store/provider";
 export const metadata = {
   title: "Create Next App",

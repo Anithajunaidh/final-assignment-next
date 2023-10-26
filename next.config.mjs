@@ -2,6 +2,7 @@
 import './src/libs/Env.mjs';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
+export const graphqlEndpoint = process.env.BACKEND_URL
 const bundleAnalyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -10,9 +11,6 @@ const bundleAnalyzer = withBundleAnalyzer({
 export default bundleAnalyzer({
   eslint: {
     dirs: ['.'],
-  },
-  env: {
-    graphqlEndpoint: process.env.BACKEND_URL,
   },
   poweredByHeader: false,
   basePath: '',
