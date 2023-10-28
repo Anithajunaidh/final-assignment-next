@@ -5,12 +5,14 @@ export default function ProductDetailLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className='w-full flex items-center justify-center'>
+    <div className='w-1/2 h-screen bg-primary'>
       <LoginLayout>
       <main >
       {children}
       </main>
       </LoginLayout>
+    </div>
     </div>
   );
 }

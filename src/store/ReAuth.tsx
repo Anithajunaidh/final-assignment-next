@@ -54,7 +54,9 @@ const baseQueryWithReauth = async (args: string | FetchArgs, api: BaseQueryApi, 
       const persistedUserData = await localStorage.getItem('persist:user');
       if (persistedUserData) {
         const userData = JSON.parse(persistedUserData);
-        const currentAccessToken = userData.accessToken.replace(/^"|"$/g, '');
+       // const currentAccessToken = userData.accessToken.replace(/^"|"$/g, '');
+        const currentAccessToken =JSON.parse(userData.accessToken)
+
         console.log(currentAccessToken)
         if (currentAccessToken) {
           try {

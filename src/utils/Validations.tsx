@@ -18,14 +18,14 @@ export const LoginvalidationSchema = Yup.object({
 //     }),
 });
 export const EmailvalidationSchema = Yup.object({
-  username: Yup.string().required('Username is required'),
-  password: Yup.string().min(8, 'Password must be at least 8 characters')
-  .matches(
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
-    'Password must contain at least one lowercase letter, one uppercase letter, one number, and one special character'
-  )
-  .required('Password is required')
-    ,
+  // username: Yup.string().required('Username is required'),
+  // password: Yup.string().min(8, 'Password must be at least 8 characters')
+  // .matches(
+  //   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+$/,
+  //   'Password must contain at least one lowercase letter, one uppercase letter, one number, and one special character'
+  // )
+  // .required('Password is required')
+  //   ,
      email: Yup.string()
     .email('Invalid email format')
     .required('Email is required'),

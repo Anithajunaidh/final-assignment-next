@@ -1,3 +1,5 @@
+import Typography from '@tailwindcss/typography';
+
 /** @type {import('tailwindcss').Config} */
 export const corePlugins = {
   preflight: false,
@@ -19,18 +21,57 @@ export const theme = {
   extend: {
     screens: {
       'md': '640px',
-      'lg': '768px',
     },
+    // themes: {
+    //   pink: {
+    //     styles: {
+    //       '.theme-pink': {
+    //         backgroundColor: 'pink',
+    //         color: 'pink',
+    //       },
+    //     },
+    //   },
+    //   red: {
+    //     styles: {
+    //       '.theme-red': {
+    //         backgroundColor: '#00AA7F',
+    //         color: 'white',
+    //       },
+    //     },
+    //   },
+    //   blue: {
+    //     styles: {
+    //       '.theme-blue': {
+    //         backgroundColor: 'blue',
+    //         color: 'white',
+    //       },
+    //     },
+    //   },
+    // },
     colors: {
-  
-      onNeutralBg: 'var(--onNeutralBg)',
-      neutralBg: 'var(--neutralBg)',
-      onPrimaryBg: 'var(--onPrimaryBg)',
-      primaryBg: 'var(--primaryBg)',
-      primary: 'var(--primary)',  
+      // onNeutralBg: 'var(--onNeutralBg)',
+      // neutralBg: 'var(--neutralBg)',
+      // onPrimaryBg: 'var(--onPrimaryBg)',
+      // primaryBg: 'var(--primaryBg)',
+      // primary: 'var(--primary)',  
       lightgreen:'#00AA7F',
       darkgreen:'#06513B',
       grayblack:'#595656',
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      buttons: 'var(--color-buttons)',
+      typography: 'var(--color-typography)',
+      // emerald: colors.emerald,
+      // fuchsia: colors.fuchsia,
+      // 'th-background': 'var(--background)',
+      // 'th-background-secondary': 'var(--background-secondary)',
+      // 'th-foreground': 'var(--foreground)',
+      // 'th-primary-dark': 'var(--primary-dark)',
+      // 'th-primary-medium': 'var(--primary-medium)',
+      // 'th-primary-light': 'var(--primary-light)',
+      // 'th-accent-dark': 'var(--accent-dark)',
+      // 'th-accent-medium': 'var(--accent-medium)',
+      // 'th-accent-light': 'var(--accent-light)',
 
     },
       flexCenter: {
@@ -49,6 +90,7 @@ export const theme = {
       borderRadius: {
         'large': '60px',
       },
+      darkMode: 'class',
     }
 };
 export const plugins = [];

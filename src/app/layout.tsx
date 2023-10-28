@@ -1,5 +1,5 @@
-
 import { ApolloWrapper } from "@/Api/ApolloProvider";
+import { ThemeProviders } from "@/components/theme/ThemeProvider";
 import ReduxProvider from "@/store/provider";
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +13,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body><ReduxProvider><ApolloWrapper>{children}</ApolloWrapper></ReduxProvider></body>
+      <body className="bg-primary">
+        <ThemeProviders>
+        <ReduxProvider>
+          <ApolloWrapper>{children}</ApolloWrapper>
+        </ReduxProvider>
+        </ThemeProviders>
+      </body>
     </html>
   );
 }

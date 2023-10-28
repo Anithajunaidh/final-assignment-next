@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import IconLabelButtons from '../IconButton'
+import Link from 'next/link'
 
 const NavBar = () => {
   return (
@@ -14,7 +15,9 @@ const NavBar = () => {
        />
        </div>
        <div className='pt-4'>
-       <IconLabelButtons/>
+       <Link href="/loginpage">
+       <IconLabelButtons />
+       </Link>
       </div>  
       </div> 
   )

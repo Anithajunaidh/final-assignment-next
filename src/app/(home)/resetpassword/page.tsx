@@ -6,40 +6,22 @@ import TextInput from "@/components/TextInput";
 import CustomButtonNew from "@/components/button";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useRegenerateAccessTokenMutation } from "@/store/ApiSlice";
+import { useTheme } from "next-themes";
 
 const ForgotPasswordPage: React.FC = () => {
+  const { theme } = useTheme();
   const router = useRouter();
   const initialValues = {
     email: "",
   };
-  const [newAccessToken] = useRegenerateAccessTokenMutation();
-  const onSubmit =async () => {
-    console.log("regenerating token");
-    try {
-      const persistedUserData = await localStorage.getItem('persist:user');
-        const userData = JSON.parse(persistedUserData);
-        const currentAccessToken  = userData.accessToken.replace(/^"|"$/g, '');
-        console.log(currentAccessToken )
-        console.log(typeof(currentAccessToken))
-      const {data}= newAccessToken({
-      
-          token: currentAccessToken, 
-        
-      });
-      if (data && data.generateAccessTokenFromToken) {
-        const {new_access_token} = data.generateAccessTokenFromToken;
-        console.log(new_access_token);
-      } 
-    } catch (error) {
-      console.error('Auth error:', error);
-    }
-    //console.log("Form Values:", values);
-   // router.push("/loginpage");
+  const onSubmit =async (values:{email:string}) => { 
+    console.log("Form Values:", values);
+    router.push("/loginpage");
   };
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center bg-gray-100">
+    <div className={`theme-${theme}`}>
+    <div className="flex flex-col items-center justify-center bg-gray-100">
       <h1 className="mb-4 text-4xl font-bold">Reset Password</h1>
       <Formik
         initialValues={initialValues}
@@ -56,7 +38,7 @@ const ForgotPasswordPage: React.FC = () => {
           />
 
           {/* Reset Password Button */}
-          <CustomButtonNew type="submit" buttonType="PRIMARY" onClick={onSubmit}>
+          <CustomButtonNew type="submit" buttonType="PRIMARY">
             Reset Password
           </CustomButtonNew>
         </Form>
@@ -64,6 +46,7 @@ const ForgotPasswordPage: React.FC = () => {
       <Link className="login-link text-onNeutralBg" href="/loginpage">
         Remember Password?
       </Link>
+    </div>
     </div>
   );
 };
