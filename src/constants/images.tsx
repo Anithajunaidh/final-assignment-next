@@ -47,6 +47,19 @@ const images = {
   DrOldWoman5:'/assets/images/landing-page/doctor_old_woman5.svg',
   DrOldMan:'/assets/images/landing-page/doctor_and_old_man.svg',
   DrGivingPills:'/assets/images/landing-page/doctor_giving_pills.svg',
+  alexander:'/assets/images/landing-page/alexandar.svg',
+  abraham:'/assets/images/landing-page/abraham.svg',
+  melissa:'/assets/images/landing-page/melissa.svg',
+  chapelIcon:'/assets/images/landing-page/chapel_icon.svg',
+  foodIcon:'/assets/images/landing-page/food_icon.svg',
+  geriatricsIcon:'/assets/images/landing-page/geriatrics_icon.svg',
+  handShaking:'/assets/images/landing-page/hand_shaking.svg',
+  seniorsSelfie:'/assets/images/landing-page/seniorsSelfie.svg',
+
+
+
+
+
 
   // Add more image constants as needed
 };

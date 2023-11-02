@@ -30,20 +30,20 @@ a:hover {
     --color-secondary: #a1d6e2;
     --color-buttons: #bcbabe;
     --color-typography: #1995ad;
-    }
-    html[data-theme="red"] {
-      --color-primary: #e3405b;
-      --color-secondary: #a1d6e2;
-      --color-buttons: #bcbabe;
-      --color-typography: #1995ad;
-      }
-      html[data-theme="blue"] {
-        --color-primary: #40b5e3;
-        --color-secondary: #a1d6e2;
-        --color-buttons: #bcbabe;
-        --color-typography: #1995ad;
-        }
-    /* :root {
+  }
+  html[data-theme="red"] {
+    --color-primary: #e3405b;
+    --color-secondary: #a1d6e2;
+    --color-buttons: #bcbabe;
+    --color-typography: #1995ad;
+  }
+  html[data-theme="blue"] {
+    --color-primary: #40b5e3;
+    --color-secondary: #a1d6e2;
+    --color-buttons: #bcbabe;
+    --color-typography: #1995ad;
+  }
+  /* :root {
         --color-neutral-50: theme('colors.gray.50');
         --color-neutral-100: theme('colors.gray.100');
         --color-neutral-200: theme('colors.gray.200');
@@ -110,4 +110,4 @@ a:hover {
     --primaryBg: var(--color-primary-900);
     --onPrimaryBg: var(--color-primary-50);
     --primary: var(--color-primary-400); */
-} 
+}

@@ -10,18 +10,19 @@ const Campaigns = () => {
        OUR CAMPAIGNS
        </div>
        <div className='font-bold text-center p-4'> Quick Access for Emergency Help</div>
-       <div className=' text-sm text-justify px-2 lg:px-32'>
+       <div className=' text-sm text-justify px-2 lg:w-1/3 lg:mx-auto'>
        24/7 doctor and nursing care is available at Mathews Home. All our nurses are qualified, CCU experienced, and has worked with reputable hospitals (India and Abroad). We assure hospital type care without giving hospital type atmosphere.      </div>
        </div>
 
       <div className="block md:hidden">
         <div className="grid grid-cols-2 grid-rows-3 gap-4">
-        <div className="col-start-1 row-start-3 relative">
+        <div className="col-start-1 row-start-3 relative ">
         <Image
          src={images.DrGivingPills}
          alt="drGivingPills"
          layout='fill'
          objectFit='cover'
+         className='p-2'
         /> 
         </div>
         <div className="col-start-2 row-start-3">

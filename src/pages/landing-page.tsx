@@ -10,6 +10,7 @@ import React from 'react'
 import RetirementLife from '@/components/LandingPage/RetirementLife'
 import Campaigns from '@/components/LandingPage/Campaigns'
 import DayCenter from '@/components/LandingPage/DayCenter'
+import HomeNurse from '@/components/LandingPage/HomeNurse'
 // import RetirementLife from '@/components/LandingPage/RetirementLife'
 
 const LandingPage = () => {
@@ -26,6 +27,7 @@ const LandingPage = () => {
 <NursingHome/> 
 <RetirementLife/>
 <Campaigns/>
+<HomeNurse/>
     </div>
   )
 }

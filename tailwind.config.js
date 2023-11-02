@@ -82,7 +82,8 @@ export const theme = {
       backgroundImage: {
         hero_img_large: "url('../images/bg_wave.svg')",
         hero_img: "url('../images/bg_mobile.svg')",
-        DrCheckingSrWoman:"url('../images/DrCheckingSrWoman.svg')"
+        DrCheckingSrWoman:"url('../images/DrCheckingSrWoman.svg')",
+        homenurse:"url('../images/bg_homenurse.svg')"
       },
       fontFamily: {
         poppins: ['Poppins', 'sans'],

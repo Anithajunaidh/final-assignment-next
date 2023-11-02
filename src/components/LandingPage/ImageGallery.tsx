@@ -33,7 +33,7 @@ const ImageGallery = () => {
           </Box>
         </Grid>
         <Grid item xs={6} className='relative ' >
-        <Box >
+        <Box className='' >
         <Image
           src={images.doctorCaringWoman}
           alt="Image 3"
@@ -41,7 +41,7 @@ const ImageGallery = () => {
           // height={160}
           layout='fill'
           objectFit='cover'
-          className='p-2'
+          className='py-2 pl-2 rounded-2xl overflow-hidden '
         />
           </Box>
        </Grid>
