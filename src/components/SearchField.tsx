@@ -12,13 +12,12 @@ const SearchField: React.FC<SearchFieldProps> = ({ value, onChange }) => {
         value={value}
         onChange={onChange}
         placeholder="Search..."
-        className="bg-{FaSearch}"
       />
     </div>
   );
 };
 
-export default SearchField;
+export default React.memo(SearchField);
 
 
 

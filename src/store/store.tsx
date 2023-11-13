@@ -3,6 +3,8 @@ import userReducer from '@/store/userSlice';
 import { persistStore, persistReducer} from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; 
 import  {usersApi}  from "./ApiSlice";
+import searchReducer from './search';
+
 
 // Create a configuration for persisting the user slice
 const userPersistConfig = {
@@ -14,12 +16,13 @@ const userPersistConfig = {
 
 // Create a persisted reducer for the user slice
 const persistedUserReducer = persistReducer(userPersistConfig, userReducer);
-
+export type AppDispatch = typeof store.dispatch;
 const store = configureStore({
     reducer: {
         // user: userReducer
         user: persistedUserReducer,
         [usersApi.reducerPath]: usersApi.reducer, 
+        search:searchReducer,
     },
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(usersApi.middleware), 

@@ -7,7 +7,7 @@ export default function ProductDetailLayout({
   return (
     <div>
       <HomeLayout>
-      <main className='flex items-center justify-center min-h-screen'>
+      <main className='p-2'>
       {children}
       </main>
       </HomeLayout>
